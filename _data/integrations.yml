@@ -31,6 +31,41 @@
 #   multiple_engine_suggestions: [ boolean ]
 #   routing: [ boolean ]
 
+- id: across
+  name: Across
+  url: https://www.across.net
+  type:
+    - cat: true
+  documentation_url: https://www.across.net/en/online-hilfe/ate/systemmanagement/systemeinstellungen/maschinelle-uebersetzung/configuration
+  engine_integrations:
+    - deepl:
+        tone: true
+
+    - google:
+        custom: true
+
+    - kantanmt:
+        custom: true
+        online_custom_training: true
+
+    - languagewire
+
+    - moses
+
+    - octavemt
+
+    - promt
+
+    - systran:
+        custom: true
+
+    - textshuttle
+
+  local_engine_support: tbd
+  multiple_engine_suggestions: tbd
+  fuzzy_repair: tbd
+
+
 - id: crowdin
   name: crowdin
   url: https://www.crowdin.com
